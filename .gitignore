@@ -1,0 +1,6 @@
+
+# PNPM deps
+node_modules/
+
+# Filesystem
+.DS_Store

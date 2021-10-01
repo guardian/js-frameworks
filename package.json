@@ -1,0 +1,26 @@
+{
+  "name": "js-frameworks",
+  "version": "1.0.0",
+  "description": "different tools to manage hydration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guardian/js-frameworks.git"
+  },
+  "keywords": [
+    "js",
+    "frameworks"
+  ],
+  "author": "@mxdvl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guardian/js-frameworks/issues"
+  },
+  "homepage": "https://github.com/guardian/js-frameworks#readme",
+  "dependencies": {
+    "@guardian/src-foundations": "^3"
+  }
+}
