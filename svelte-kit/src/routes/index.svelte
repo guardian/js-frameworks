@@ -1,2 +1,96 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script context="module">
+	import { main, header, footer, logo, flex, flexItem } from '../styles/main.css';
+	export const hydrate = false;
+</script>
+
+<script>
+	let counter = 12;
+</script>
+
+<!-- svelte-ignore component-name-lowercase -->
+<header class={header}>
+	<h1 class={logo}>The Guardian</h1>
+</header>
+
+<section class={main}>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+		labore et dolore magna aliqua. Magna ac placerat vestibulum lectus mauris ultrices eros in. Eget
+		aliquet nibh praesent tristique magna sit. Non enim praesent elementum facilisis leo. Ultrices
+		in iaculis nunc sed augue lacus. Tristique senectus et netus et malesuada fames. Ac tortor
+		dignissim convallis aenean et tortor at. Massa placerat duis ultricies lacus sed turpis
+		tincidunt. Aliquam sem et tortor consequat id porta. Pellentesque adipiscing commodo elit at
+		imperdiet. Orci ac auctor augue mauris. Faucibus in ornare quam viverra orci sagittis eu. Vitae
+		et leo duis ut diam quam. Sit amet mauris commodo quis imperdiet. Ipsum nunc aliquet bibendum
+		enim facilisis gravida neque convallis. Tincidunt dui ut ornare lectus sit. Maecenas sed enim ut
+		sem. Libero id faucibus nisl tincidunt eget.
+	</p>
+
+	<p>
+		Arcu risus quis varius quam. Sit amet mattis vulputate enim nulla aliquet porttitor. Sit amet
+		cursus sit amet dictum sit amet. Lectus nulla at volutpat diam ut venenatis. Sit amet
+		consectetur adipiscing elit ut aliquam purus sit. Vitae justo eget magna fermentum iaculis eu
+		non diam. Volutpat maecenas volutpat blandit aliquam etiam erat velit. Vitae suscipit tellus
+		mauris a diam. Mauris pharetra et ultrices neque. Varius sit amet mattis vulputate enim nulla
+		aliquet porttitor lacus. Nibh cras pulvinar mattis nunc sed blandit libero volutpat. Quis
+		commodo odio aenean sed adipiscing.
+	</p>
+
+	<div class={flex}>
+		<p class={flexItem}>Here’s a dynamic component:</p>
+		<div class={flexItem}>
+			<button
+				on:click={() => {
+					counter--;
+				}}>-</button
+			>
+			<pre>{counter}</pre>
+			<button
+				on:click={() => {
+					counter++;
+				}}>+</button
+			>
+		</div>
+	</div>
+
+	<p>
+		Tempor id eu nisl nunc mi ipsum faucibus vitae. Blandit cursus risus at ultrices mi tempus
+		imperdiet nulla. Quis enim lobortis scelerisque fermentum dui faucibus in ornare. Vestibulum
+		rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Vitae elementum curabitur
+		vitae nunc sed velit. Tellus elementum sagittis vitae et leo duis ut. Ut ornare lectus sit amet.
+		Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. Eget duis at tellus at
+		urna condimentum mattis. Tortor id aliquet lectus proin nibh nisl condimentum. Vulputate odio ut
+		enim blandit volutpat maecenas volutpat blandit.
+	</p>
+
+	<p>
+		Facilisi nullam vehicula ipsum a arcu cursus vitae congue. Adipiscing at in tellus integer.
+		Parturient montes nascetur ridiculus mus mauris. Bibendum ut tristique et egestas quis ipsum.
+		Risus in hendrerit gravida rutrum quisque non tellus orci ac. Volutpat commodo sed egestas
+		egestas fringilla. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Neque
+		gravida in fermentum et. Amet venenatis urna cursus eget nunc scelerisque. Aenean euismod
+		elementum nisi quis eleifend.
+	</p>
+
+	<p>
+		Risus at ultrices mi tempus imperdiet. Suspendisse in est ante in nibh. Eget lorem dolor sed
+		viverra. Tellus cras adipiscing enim eu turpis egestas pretium aenean. Morbi tincidunt ornare
+		massa eget egestas purus viverra accumsan in. Justo nec ultrices dui sapien. Enim tortor at
+		auctor urna nunc id cursus metus. Imperdiet proin fermentum leo vel orci porta non pulvinar.
+		Nunc mattis enim ut tellus. In metus vulputate eu scelerisque. Vitae auctor eu augue ut lectus
+		arcu bibendum at. In ante metus dictum at tempor. Scelerisque felis imperdiet proin fermentum
+		leo vel. Mi quis hendrerit dolor magna eget est lorem. Erat nam at lectus urna duis. Diam
+		maecenas ultricies mi eget mauris pharetra et ultrices neque. Varius quam quisque id diam vel
+		quam elementum.
+	</p>
+</section>
+
+<!-- svelte-ignore component-name-lowercase -->
+<footer class={footer}>(This footer cannot be imported from Source)</footer>
+
+<style>
+	:global(body) {
+		max-width: 1300px;
+		margin: 0 auto;
+	}
+</style>
