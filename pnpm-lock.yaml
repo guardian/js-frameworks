@@ -16,6 +16,7 @@ importers:
       '@astrojs/renderer-react': ^0.2.1
       '@astrojs/renderer-svelte': ^0.1.2
       '@guardian/src-foundations': ^3
+      '@vanilla-extract/snowpack-plugin': ^2.0.0
       astro: ^0.20.8
     dependencies:
       '@guardian/src-foundations': 3.9.0
@@ -23,6 +24,7 @@ importers:
       '@astrojs/renderer-preact': 0.2.2
       '@astrojs/renderer-react': 0.2.1
       '@astrojs/renderer-svelte': 0.1.2
+      '@vanilla-extract/snowpack-plugin': 2.0.0
       astro: 0.20.8
 
   elder-js:
@@ -99,6 +101,8 @@ importers:
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.26
       '@typescript-eslint/eslint-plugin': ^4.31.1
       '@typescript-eslint/parser': ^4.31.1
+      '@vanilla-extract/css': ^1.6.1
+      '@vanilla-extract/snowpack-plugin': ^2.0.0
       '@vanilla-extract/vite-plugin': ^2.1.0
       eslint: ^7.32.0
       eslint-config-prettier: ^8.3.0
@@ -117,6 +121,8 @@ importers:
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.26_svelte@3.43.1
       '@typescript-eslint/eslint-plugin': 4.32.0_1eacf2495a01e8a68ffa99482308e8ec
       '@typescript-eslint/parser': 4.32.0_eslint@7.32.0+typescript@4.4.3
+      '@vanilla-extract/css': 1.6.1
+      '@vanilla-extract/snowpack-plugin': 2.0.0
       '@vanilla-extract/vite-plugin': 2.1.0
       eslint: 7.32.0
       eslint-config-prettier: 8.3.0_eslint@7.32.0
@@ -2595,6 +2601,12 @@ packages:
 
   /@vanilla-extract/private/1.0.1:
     resolution: {integrity: sha512-ABrFJGSmF7a1M+eDTsIeAErPhIeRyBY3ypyLQPc4bUVEK1mvF7F2gx4fTP81pm12bkS0GhjSJtM854lcPWhB+w==}
+
+  /@vanilla-extract/snowpack-plugin/2.0.0:
+    resolution: {integrity: sha512-me0tDQAmQiHiKHtttSkKEgsmY/R4lKnJXApncav8rMjhJORbsMXPg7N2ikrNeItUCTZryZSW+cx3c9qkg8IJ/A==}
+    dependencies:
+      '@vanilla-extract/integration': 1.4.1
+    dev: true
 
   /@vanilla-extract/vite-plugin/2.1.0:
     resolution: {integrity: sha512-gifoC6HvO7QMgbm67RZ2lYtV8a2DZJU/jWVRR0hf7XlMz0T6wfYG6AciJH7kFFwBc1P1Krpsg2poTW+2W0uxGw==}

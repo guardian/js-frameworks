@@ -12,7 +12,7 @@
 	<h1 class={logo}>The Guardian</h1>
 </header>
 
-<section class={main}>
+<main class={main}>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Magna ac placerat vestibulum lectus mauris ultrices eros in. Eget
@@ -83,7 +83,7 @@
 		maecenas ultricies mi eget mauris pharetra et ultrices neque. Varius quam quisque id diam vel
 		quam elementum.
 	</p>
-</section>
+</main>
 
 <!-- svelte-ignore component-name-lowercase -->
 <footer class={footer}>(This footer cannot be imported from Source)</footer>

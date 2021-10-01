@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 
 export default function PreactCounter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(12);
   const add = () => setCount((i) => i + 1);
   const subtract = () => setCount((i) => i - 1);
 
