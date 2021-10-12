@@ -16,9 +16,16 @@ the client-side and support for [Source], our design system.
 
 ## Comparison
 
-| Framework support         | Astro | Svelte | Next | Elder | React |
-|---------------------------|-------|--------|------|-------|-------|
-| Server-side Rendering     |       | Yes    |      |       | Meh   |
-| Partial Hydration         |       | No     |      |       | Meh   |
-| Source support            |       | Meh    |      |       | Yes   |
-| React components          |       | No     |      |       | Yes   |
+```zsh
+pnpm -r build-and-preview
+```
+
+| Framework support         | Astro | Svelte| Next  | Elder | React |
+|---------------------------|-------|-------|-------|-------|-------|
+| Server-side Rendering     | Yes   | Yes   | Yes   |       | Meh   |
+| Partial Hydration         | Yes   | No    | No    |       | Meh   |
+| Source support            | Yes†  | Meh   | Yes   |       | Yes   |
+| React components          | Yes   | No    | Yes   |       | Yes   |
+| Initial JS load size      | 12 kB | 20 kB?| 66 kB | ???   | ???   |
+
+†: Attempts at using vanilla-extract failed, but a PR against the repo exists:
