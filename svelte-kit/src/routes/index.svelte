@@ -1,9 +1,14 @@
 <script context="module">
 	import { main, header, footer, logo, flex, flexItem } from '../styles/main.css';
-	export const hydrate = false;
+	/**
+	 * Hydration is essential, otherwise
+	 * - no interactivity
+	 * - vanilla-extract doesn’t work
+	 */
+	export const hydrate = true;
 </script>
 
-<script>
+<script lang="ts">
 	let counter = 12;
 </script>
 
