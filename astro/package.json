@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "build-and-preview": "astro build && astro preview --port 3002",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
