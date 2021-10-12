@@ -1,4 +1,6 @@
 packages:
   - 'astro'
   - 'elder-js'
+  - 'gu-rendering'
+  - 'next-js'
   - 'svelte-kit'
