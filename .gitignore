@@ -4,3 +4,4 @@ node_modules/
 
 # Filesystem
 .DS_Store
+.pnpm-debug.log
