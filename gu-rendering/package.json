@@ -44,8 +44,8 @@
         "microbundle": "^0.12.0",
         "prettier": "^2.0.5",
         "pretty-quick": "^2.0.1",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+        "react": "^17",
+        "react-dom": "^17"
     },
     "eslintConfig": {
         "root": true,
@@ -71,8 +71,8 @@
     "peerDependencies": {
         "@guardian/src-foundations": "^1.0.1",
         "emotion": "^10.0.27",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1"
+        "react": "^17",
+        "react-dom": "^17"
     },
     "jest": {
         "testEnvironment": "jest-environment-jsdom-sixteen",
