@@ -47,7 +47,7 @@
 			<button
 				on:click={() => {
 					counter--;
-				}}>-</button
+				}}>−</button
 			>
 			<pre>{counter}</pre>
 			<button

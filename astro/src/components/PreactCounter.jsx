@@ -7,7 +7,7 @@ export default function PreactCounter() {
 
   return (
     <div id="preact" class="counter">
-      <button onClick={subtract}>-</button>
+      <button onClick={subtract}>−</button>
       <pre>{count}</pre>
       <button onClick={add}>+</button>
     </div>
