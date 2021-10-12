@@ -158,7 +158,11 @@ importers:
 
   next-js:
     specifiers:
+      '@guardian/src-footer': ^3.9.1
       '@types/react': 17.0.28
+      '@vanilla-extract/babel-plugin': ^1.1.1
+      '@vanilla-extract/css': ^1.6.1
+      '@vanilla-extract/next-plugin': ^1.0.0
       eslint: 8.0.0
       eslint-config-next: 11.1.2
       next: 11.1.2
@@ -166,11 +170,15 @@ importers:
       react-dom: 17.0.2
       typescript: 4.4.3
     dependencies:
+      '@guardian/src-footer': 3.9.1_1905ecf79ab003469df2e9b0be69ab60
       next: 11.1.2_bd7797d63db473de6e2318609a63c933
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     devDependencies:
       '@types/react': 17.0.28
+      '@vanilla-extract/babel-plugin': 1.1.1
+      '@vanilla-extract/css': 1.6.1
+      '@vanilla-extract/next-plugin': 1.0.0_next@11.1.2
       eslint: 8.0.0
       eslint-config-next: 11.1.2_c2051ee12dac60c3dae3ae8bd2da3c70
       typescript: 4.4.3
@@ -496,7 +504,7 @@ packages:
       '@babel/compat-data': 7.15.0
       '@babel/core': 7.15.8
       '@babel/helper-validator-option': 7.14.5
-      browserslist: 4.17.2
+      browserslist: 4.17.3
       semver: 6.3.0
     dev: true
 
@@ -2074,6 +2082,23 @@ packages:
     resolution: {integrity: sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==}
     dev: true
 
+  /@guardian/libs/3.3.0:
+    resolution: {integrity: sha512-XB9o8qtDOg+KlPh1sjEr4u+Ai3RFTRr2riZ/HJpdlh8Cu4ZpYjCSGUZXSGkxp1CwFWT9sduANnsWSqZ97iBloQ==}
+    dev: false
+
+  /@guardian/src-footer/3.9.1_1905ecf79ab003469df2e9b0be69ab60:
+    resolution: {integrity: sha512-PQDHg4YgocK3Fu9C53WcvIEsW2+olquYb5Nkuvxvif19CEeTurYT2ruEmfQNX6IcQecL4pG23a1HkUvQZQr5SQ==}
+    peerDependencies:
+      '@emotion/react': ^11.1.2
+      '@guardian/src-foundations': ^3.9.1
+      react: ^17.0.1
+    dependencies:
+      '@guardian/libs': 3.3.0
+      '@guardian/src-foundations': 3.9.1
+      '@guardian/src-helpers': 3.9.1
+      react: 17.0.2
+    dev: false
+
   /@guardian/src-foundations/1.9.1:
     resolution: {integrity: sha512-gC8fjZPt7gq8r0bqlaaWRGqpeKQMnBPPDpj9Hvvc4/9usWdJhLVYJmLLCOz9l0L5nvawu52jwW68KJLCoxE1zQ==}
     dev: true
@@ -2084,6 +2109,13 @@ packages:
 
   /@guardian/src-foundations/3.9.1:
     resolution: {integrity: sha512-rSeyPK0MWFloE+36TUg/Ffp7zLohF1GlAKHg4L02wZG49kHnCPeL6uULwTnV4Mfc5H9XKvDb9OBis2pbBeTHEA==}
+    dev: false
+
+  /@guardian/src-helpers/3.9.1:
+    resolution: {integrity: sha512-1aA/3W6VDdSCfXGp8/zbZv9lEYZzEK3n/gy9H4mwK/m3XnKrktAk24NWQRirx/NKFIuLO+TefTbxKzhIs9fdfg==}
+    dependencies:
+      '@guardian/src-foundations': 3.9.1
+      mini-svg-data-uri: 1.3.3
     dev: false
 
   /@hapi/accept/5.0.2:
@@ -4320,6 +4352,16 @@ packages:
       eslint-visitor-keys: 2.1.0
     dev: true
 
+  /@vanilla-extract/babel-plugin/1.1.1:
+    resolution: {integrity: sha512-77i1pvgkL1ViKFr0dJQhzWG7ouR5la2S/d8Yha6eNbUCwaZPq9m8yQWTBFJxJQt+xC7MO3XydME2sBDYtDqUPw==}
+    dependencies:
+      '@babel/core': 7.15.8
+      '@babel/template': 7.15.4
+      '@vanilla-extract/integration': 1.4.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@vanilla-extract/css/1.6.1:
     resolution: {integrity: sha512-MTR8pHVV80/B4H37JqyUwC8GUwA6DMdClcjgrU98svLrnmWq2Y8BWox9OQAOovoOwGtZwkJhjTQUmPkK0D13Bw==}
     dependencies:
@@ -4346,6 +4388,18 @@ packages:
       lodash: 4.17.21
     dev: true
 
+  /@vanilla-extract/next-plugin/1.0.0_next@11.1.2:
+    resolution: {integrity: sha512-728O1S9wpfNpi7e0TpdETr4CFwHuLo6aGlE1H46fr3FxrKvnWvr+5aZNvq2zVLxvJaBrTAZsJ2R7PxV6wgeZeg==}
+    peerDependencies:
+      next: '>=11.0.0'
+    dependencies:
+      '@vanilla-extract/webpack-plugin': 2.1.0
+      next: 11.1.2_bd7797d63db473de6e2318609a63c933
+    transitivePeerDependencies:
+      - supports-color
+      - webpack
+    dev: true
+
   /@vanilla-extract/private/1.0.1:
     resolution: {integrity: sha512-ABrFJGSmF7a1M+eDTsIeAErPhIeRyBY3ypyLQPc4bUVEK1mvF7F2gx4fTP81pm12bkS0GhjSJtM854lcPWhB+w==}
 
@@ -4361,6 +4415,21 @@ packages:
       vite: ^2.2.3
     dependencies:
       '@vanilla-extract/integration': 1.4.1
+    dev: true
+
+  /@vanilla-extract/webpack-plugin/2.1.0:
+    resolution: {integrity: sha512-DU6OtBrFlGkYds2fGzn9WvvoZOMzUBR/4WKmeMSlRn+ypUVtvu+z65MqlqE8QhbTzbOnmkifDkuyvOQOm+d3BA==}
+    peerDependencies:
+      webpack: ^4.30.0 || ^5.20.2
+    dependencies:
+      '@vanilla-extract/integration': 1.4.1
+      chalk: 4.1.2
+      debug: 4.3.2
+      loader-utils: 2.0.0
+      lodash: 4.17.21
+      virtual-resource-loader: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@vue/compiler-core/3.2.20:
@@ -12641,6 +12710,11 @@ packages:
       webpack-sources: 1.4.3
     dev: true
 
+  /mini-svg-data-uri/1.3.3:
+    resolution: {integrity: sha512-+fA2oRcR1dJI/7ITmeQJDrYWks0wodlOz0pAEhKYJ2IVc1z0AnwJUsKY2fzFmPAM3Jo9J0rBx8JAA9QQSJ5PuA==}
+    hasBin: true
+    dev: false
+
   /minimalistic-assert/1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
 
@@ -18223,6 +18297,12 @@ packages:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.0
       vfile-message: 3.0.2
+    dev: true
+
+  /virtual-resource-loader/1.0.0:
+    resolution: {integrity: sha512-MalwfaqwMcUmb2MtHb2hK6YYg3It4j7Hxv8I7FEAtm1h477kZ8hWPcqVpxZAInLIkmh0YbnCpvXwzmnyhdAyhw==}
+    dependencies:
+      loader-utils: 2.0.0
     dev: true
 
   /vite/2.6.7:
