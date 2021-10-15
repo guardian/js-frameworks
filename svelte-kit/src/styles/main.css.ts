@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
-import { text, background } from '@guardian/src-foundations/palette';
-import { titlepiece, body } from '@guardian/src-foundations/typography';
+import { text, background } from '@guardian/src-foundations/dist/cjs/palette/index.js';
+import { titlepiece, body } from '@guardian/src-foundations/dist/cjs/typography/index.js';
 import { space } from '@guardian/src-foundations';
 
 const cleanUpFamily = (s: string) => s.replace('font-family:', '');
